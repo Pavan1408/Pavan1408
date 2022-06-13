@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+                background-color: green;
+            }
+        </style>
+        <script type="text/javascript">
+            function big(n11,n22,n33) {
+                    n1=parseInt(n11)
+                    n2=parseInt(n22)
+                    n3=parseInt(n33)
+                if(n1 > n2 && n1 > n3)
+                {
+                    window.alert("number1=" + n1 + "is largest")
+                }
+                else if(n2>n1 && n2>n3)
+                {
+                    window.alert("number2=" + n2 + "is largest")
+                }
+                else if(n3>n1 && n3>n2){
+                    window.alert("number3" + n3 + 'is largest')
+                }
+                else{
+                    window.alert("more than one number cannot be equal ")
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        <form>
+            Number1: &nbsp;&nbsp;<input type="number" min="1" max="1000" id="num1" name="num1"><br>
+            Number2: &nbsp;&nbsp;<input type="number" min="1" max="1000" id="num2" name="num2"><br>
+            Number3: &nbsp;&nbsp;<input type="number" min="1" max="1000" id="num3" name="num3"><br>
+            <input type="submit" onclick="big(document.getElementById('num1').value,document.getElementById('num2').value)">
+        </form>
+    </body>
+</html>

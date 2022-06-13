@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+                background-color: darkgrey;
+            }
+            .a{
+                font-size:30px;
+                height: 100px;
+                width: 400px;
+            }
+            button {
+                height : 100px;
+                width:100px;
+                font-size: 40px;
+            }
+            .b {
+                height : 100px;
+                width:100px;
+                font-size: 40px;
+            }
+        </style>
+        <script type="text/javascript">
+            var y=0
+            var k=0
+        function calcul(val)
+        {
+        document.getElementById("edu").value+=val
+        }
+        function solve()
+        {
+        let x = document.getElementById("edu").value
+        let y = eval(x)
+        document.getElementById("edu").value=y
+        }
+        function clr()
+        {
+           
+        let y = document.getElementById("edu").value
+        let k = y%10
+        document.getElementById("edu").value =""
+        }
+        </script> 
+    </head>
+    <body>
+        <form>
+            <input type="text" id="edu" class="a"><br><br><br><br>
+            <input type="button" value="1" id="n1" name="n1" onclick="calcul(document.getElementById('n1').value)" class="b">
+            <input type="button" value="2" id="n2" name="n2" onclick="calcul(document.getElementById('n2').value)" class="b">
+            <input type="button" value="3" id="n3" name="n3" onclick="calcul(document.getElementById('n3').value)" class="b">
+            <input type="button" value="+" id="na" name="na" onclick="calcul(document.getElementById('na').value)" class="b"><br><br>
+            <input type="button" value="4" id="n4" name="n4" onclick="calcul(document.getElementById('n4').value)" class="b">
+            <input type="button" value="5" id="n5" name="n5" onclick="calcul(document.getElementById('n5').value)" class="b">
+            <input type="button" value="6" id="n6" name="n6" onclick="calcul(document.getElementById('n6').value)" class="b">
+            <input type="button" value="-" id="ns" name="ns" onclick="calcul(document.getElementById('ns').value)" class="b"><br><br>
+            <input type="button" value="7" id="n7" name="n7" onclick="calcul(document.getElementById('n7').value)" class="b">
+            <input type="button" value="8" id="n8" name="n8" onclick="calcul(document.getElementById('n8').value)" class="b">
+            <input type="button" value="9" id="n9" name="n9" onclick="calcul(document.getElementById('n9').value)" class="b">
+            <input type="button" value="/" id="nd" name="nd" onclick="calcul(document.getElementById('nd').value)" class="b"><br><br>
+            <input type="button" value="back" onclick="clr()" class='b'>
+            <input type="button" value="0" id="n0" name="n0" onclick="calcul(document.getElementById('n0').value)" class="b">
+            <input type="button" value="=" onclick="solve()" class="b">
+            <input type="button" value="*" id="nm" name="nm" onclick="calcul(document.getElementById('nm').value)" class="b">
+        </form>
+    </body>
+</html>

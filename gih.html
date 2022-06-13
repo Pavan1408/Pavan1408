@@ -1,0 +1,50 @@
+<html>
+    <head> 
+        <style>
+            #s{
+            text-align:center;
+            align-content: center;
+
+        }
+        </style>
+    </head>
+        <body>
+        <h2 id="gg"></h2>
+        <p id="ndfbdn"></p><div id="s">
+            
+
+        <!-- <button type="submit" name="s" id="s" class="s" onclick="document.getElementById('gg').style.backgroundColor='black'">submi</button></div> -->
+        <button type="submit" id="btn">hdjt</button>
+        <script>
+        const btn = document.getElementById('btn');
+
+        let index = 0;
+
+        const colors = ['salmon', 'grey', 'blue', 'violet'];
+        const color = [ 'grey','salmon','violet', 'blue'];
+        btn.addEventListener('click', function onClick() {
+        document.getElementById("gg").style.backgroundColor = colors[index];
+        document.getElementById("ndfbdn").style.backgroundColor = color[index];
+        btn.style.color = 'black';
+
+
+        index = index >= colors.length - 1 ? 0 : index + 1;
+        });
+
+
+            document.getElementById("gg").innerHTML="TITLE"
+            document.getElementById("ndfbdn").innerHTML="TITLE"
+            document.getElementById("gg").style.color="skyblue"
+            document.getElementById("gg").style.color="green"
+            document.getElementById("gg").style.textAlign="center"
+            document.getElementById("ndfbdn").style.color="purple"
+            document.getElementById("ndfbdn").style.textAlign="center"
+            document.getElementById("gg").style.fontSize="125px"
+            document.getElementById("ndfbdn").style.fontSize="105px"
+            document.getElementById("gg").style.backgroundColor="pink"
+            document.getElementById("ndfbdn").style.backgroundColor="red"
+            document.getElementById("gg").style.borderBlockStyle="50px"
+            document.getElementById("ndfbdn").style.borderBlockStyle="50px"
+        </script>
+    </body>
+</html>

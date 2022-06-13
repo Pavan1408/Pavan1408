@@ -1,0 +1,17 @@
+x=int(input())
+a=[2000,500,100,50,20,10,5,2,1]
+i=0
+count=0
+while(x>0):
+    s=0
+    if((x/(a[i]))<1):
+        if(count>=1): 
+            print(a[i],count)
+        count=0
+        i=i+1
+    elif((x/(a[i]))>1):
+        count=count+1
+        x=x-a[i]
+    else:
+        print(a[i],count+1)
+        break         
